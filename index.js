@@ -1,83 +1,83 @@
+/* ДЗ урока 2.3 */
+
 /* Задание 1 */
 
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+let password = ('vac123');
+let input = prompt('Введите пароль');
+if (password === input) {
+    alert('Пароль введен верно');
+} else {
+    alert('Пароль введен неправильно');
+}
+
 
 /* Задание 2 */
 
-let issue = Number(2007);
-alert(`Год выпуска первого Iphone - ${issue}`);
+let c = 7;
+if (c > 0 && c < 10) {
+    alert('Верно');
+} else {
+    console.log('Неверно');
+}
 
 /* Задание 3 */
 
-let name = String(`Брэндан Эйх`);
-alert(`Создатель языка JavaScript - ${name}`);
+let d = 50;
+let e = 150;
+if (d || e > 100) {
+    alert('Верно');
+} else {
+    alert('Неверно');
+}
 
 /* Задание 4 */
 
-let e = Number(10);
-let b = Number(2);
-alert(e + b);
-alert(e - b);
-alert(e * b);
-alert(e / b);
+let a = 3;
+let b = 2;
+alert(a + b);
+
 
 /* Задание 5 */
 
-let result = (2 ** 5);
-alert(result);
-
-/* Задание 6 */
-
-let r = Number(9);
-let t = Number(2);
-alert(r%t);
-
-/* Задание 7 */
-
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num += 1;
-num -= 1;
-alert(num);
-
-
-/* Задание 8 */
-
-let age1 = prompt(`Сколько Вам лет?`);
-alert(age1);
-
-
-/* Задание 9 */
-
-const user = {
-    name: `Vladislav`,
-    age: 27,
-    isAdmin: true,
-};
-
-/* Задание 9.1 */
-user[`city of residence`] =`Varna`;
-
-/* Задание 9.2 */
-user.age = 54;
-
-/* Задание 9.3 */
-delete user[`city of residence`];
-
-/* Задание 9.4 */
-let info = prompt(`Какую информацию хотите узнать о пользователе?`);
-alert (user [info]);
-
-/* Задание 10 */
-let named = prompt(`Как тебя зовут?`);
-alert (`Привет, ${named}!`);
-
-
-
-
+let monthNumber = (prompt('Введите номер месяца'));
+switch (monthNumber) {
+    case '1':
+        alert('Зима');
+        break;
+    case '2':
+        alert('Зима');
+        break;
+    case '3':
+        alert('весна');
+        break;
+    case '4':
+        alert('весна');
+        break;
+    case '5':
+        alert('весна');
+        break;
+    case '6':
+        alert('лето');
+        break;
+    case '7':
+        alert('лето');
+        break;
+    case '8':
+        alert('лето');
+        break;
+    case '9':
+        alert('осень');
+        break;
+    case '10':
+        alert('осень');
+        break;
+    case '11':
+        alert('осень');
+        break;
+    case '12':
+        alert('Зима');
+        break;
+    default:
+        alert('Не существует');
+        break;
+}
