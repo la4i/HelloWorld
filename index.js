@@ -1,83 +1,56 @@
-/* ДЗ урока 2.3 */
+// Задание 1
 
-/* Задание 1 */
+let u = 1;
 
-let password = ('vac123');
-let input = prompt('Введите пароль');
-if (password === input) {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен неправильно');
+do {
+    console.log('Привет');
+    u++;
+} while (u < 3)
+
+// Задание 2 
+
+let t = 1;
+
+do {
+    console.log(t);
+    t++;
+} while (t < 6)
+
+// Задание 3 
+
+let y = 7;
+
+do {
+    console.log(y);
+    y++;
+} while (y < 23)
+
+// Задание 4
+
+const user = {
+    name: 'Коля',
+    name: 'Вася',
+    name: 'Петя',
+};
+
+for (key in user) {
+    if (user[key]) {
+        alert('Коля — зарплата 200 долларов.');
+        alert('Вася — зарплата 300 долларов.')
+        alert('Петя — зарплата 400 долларов.')
+    }
 }
 
+// Задание 5
 
-/* Задание 2 */
+for (let n = 1000, num = 5; n > 50; num++) {
 
-let c = 7;
-if (c > 0 && c < 10) {
-    alert('Верно');
-} else {
-    console.log('Неверно');
+    n /= 2;
+    console.log(n);
 }
 
-/* Задание 3 */
+// Задание 6 
 
-let d = 50;
-let e = 150;
-if (d || e > 100) {
-    alert('Верно');
-} else {
-    alert('Неверно');
-}
-
-/* Задание 4 */
-
-let a = 3;
-let b = 2;
-alert(a + b);
-
-
-/* Задание 5 */
-
-let monthNumber = (prompt('Введите номер месяца'));
-switch (monthNumber) {
-    case '1':
-        alert('Зима');
-        break;
-    case '2':
-        alert('Зима');
-        break;
-    case '3':
-        alert('весна');
-        break;
-    case '4':
-        alert('весна');
-        break;
-    case '5':
-        alert('весна');
-        break;
-    case '6':
-        alert('лето');
-        break;
-    case '7':
-        alert('лето');
-        break;
-    case '8':
-        alert('лето');
-        break;
-    case '9':
-        alert('осень');
-        break;
-    case '10':
-        alert('осень');
-        break;
-    case '11':
-        alert('осень');
-        break;
-    case '12':
-        alert('Зима');
-        break;
-    default:
-        alert('Не существует');
-        break;
+for (let friday = 5; friday <= 31; friday = friday + 7) {
+    console.log(`Сегодня пятница, ${friday}-е число.Необходимо подготовить отчет.`);
 }
