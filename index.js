@@ -38,14 +38,16 @@ for (let name in obj) {
 
 // Задание 5
 
-for (let n = 1000, num = 5; n > 50; num++) {
+for (let n = 1000; n > 50; num++) {
 
     n /= 2;
     console.log(n);
+    num = 5;
+    num++;
 }
 
 // Задание 6 
 
-for (let friday = 5; friday <= 31; friday = friday + 7) {
+for (let friday = 5; friday <= 31; friday += 7) {
     console.log(`Сегодня пятница, ${friday}-е число.Необходимо подготовить отчет.`);
 }
