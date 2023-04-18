@@ -1,83 +1,53 @@
-/* Задание 1 */
+// Задание 1
 
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+let u = 1;
 
-/* Задание 2 */
+do {
+    console.log('Привет');
+    u++;
+} while (u < 3)
 
-let issue = Number(2007);
-alert(`Год выпуска первого Iphone - ${issue}`);
+// Задание 2 
 
-/* Задание 3 */
+let t = 1;
 
-let name = String(`Брэндан Эйх`);
-alert(`Создатель языка JavaScript - ${name}`);
+do {
+    console.log(t);
+    t++;
+} while (t < 6)
 
-/* Задание 4 */
+// Задание 3 
 
-let e = Number(10);
-let b = Number(2);
-alert(e + b);
-alert(e - b);
-alert(e * b);
-alert(e / b);
+let y = 7;
 
-/* Задание 5 */
+do {
+    console.log(y);
+    y++;
+} while (y < 23)
 
-let result = (2 ** 5);
-alert(result);
+// Задание 4
 
-/* Задание 6 */
-
-let r = Number(9);
-let t = Number(2);
-alert(r%t);
-
-/* Задание 7 */
-
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num += 1;
-num -= 1;
-alert(num);
-
-
-/* Задание 8 */
-
-let age1 = prompt(`Сколько Вам лет?`);
-alert(age1);
-
-
-/* Задание 9 */
-
-const user = {
-    name: `Vladislav`,
-    age: 27,
-    isAdmin: true,
+let obj = {
+    "Коля": '200',
+    "Вася": '300',
+    "Петя": '400',
 };
+for (let name in obj) {
+    alert(`${name} - зарплата ${obj[name]} долларов`)
+}
 
-/* Задание 9.1 */
-user[`city of residence`] =`Varna`;
+// Задание 5
 
-/* Задание 9.2 */
-user.age = 54;
+for (let n = 1000; n > 50; num++) {
 
-/* Задание 9.3 */
-delete user[`city of residence`];
+    n /= 2;
+    console.log(n);
+    num = 5;
+    num++;
+}
 
-/* Задание 9.4 */
-let info = prompt(`Какую информацию хотите узнать о пользователе?`);
-alert (user [info]);
+// Задание 6 
 
-/* Задание 10 */
-let named = prompt(`Как тебя зовут?`);
-alert (`Привет, ${named}!`);
-
-
-
-
+for (let friday = 5; friday <= 31; friday += 7) {
+    console.log(`Сегодня пятница, ${friday}-е число.Необходимо подготовить отчет.`);
+}
