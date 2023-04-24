@@ -43,4 +43,32 @@ numbs1.push(2, 2, 2);
 
 console.log(numbs1);
 
+// Задание 6 
+
+let bull = [9, 8, 7, 'a', 6, 5];
+
+bull = bull.sort();
+console.log(bull.pop());
+
+console.log(bull);
+
+// Задание 8
+
+const str = 'abcdef';
+
+const reverse = str.split('').reverse().join('');
+
+console.log(reverse);
+
+// Задание 9 
+
+let arrt = [
+    [1, 2, 3],
+    [4, 5, 6],
+];
+
+arrt = arrt.join();
+arrt = arrt.split();
+
+console.log(arrt);
 
