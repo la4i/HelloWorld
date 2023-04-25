@@ -3,9 +3,10 @@
 const numbs = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbs.length; i++) {
-    if (numbs[i] == 10) break;
     console.log(numbs[i]);
+    if (numbs[i] == 10) break;
 }
+
 
 // Задание 2
 
@@ -23,17 +24,16 @@ console.log(numb);
 
 // Задание 4 
 
-const arr1 = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-];
+let arr1 = [];
 
-for (let arrIn of arr1) {
-    for (let element of arrIn) {
-        console.log(element);
+for (let i = 0; i < 3; i++) {
+    let investArr = [];
+    for (let k = 0; k < 3; k++) {
+        investArr.push(1);
     }
+    arr1.push(investArr);
 }
+console.log(arr1);
 
 // Задание 5 
 
@@ -52,6 +52,18 @@ console.log(bull.pop());
 
 console.log(bull);
 
+// Задание 7 
+
+const arr3 = [9, 8, 7, 6, 5];
+let userInp = +prompt('Введите число от 1 до 10');
+if (arr3.includes(userInp)) {
+    alert('Число содержиться в массиве')
+} if (isNaN(userInp)) {
+    alert('Не является числом')
+}  else {
+    alert('Не содержиться в массиве')
+}
+
 // Задание 8
 
 const str = 'abcdef';
@@ -67,8 +79,50 @@ let arrt = [
     [4, 5, 6],
 ];
 
-arrt = arrt.join();
-arrt = arrt.split();
+arrt = arrt.flat();
 
 console.log(arrt);
 
+// Задание 10
+
+const arr2 = [2, 5, 7, 10, 3];
+
+for (let elem of arr2) {
+    const result = arr2.reduce((intermediate, value) => intermediate + value); {
+        const sum = (a, b) => {
+            let result = a + b;
+        }
+        console.log(result);
+    }
+}
+
+// Задание 11 
+
+const numbers = [2, 4, 6];
+
+function squareNumbers(numbers) {
+    return numbers.map(x => x ** 2);
+}
+
+console.log(squareNumbers(numbers));
+
+// Задание 12
+
+function getLengthWords(select) {
+    const arr = [];
+    for (let i = 0; i < select.length; i++) {
+        const wordlength = select[i].length;
+        arr.push(wordlength)
+    } return arr;
+}
+
+let select = (['слово', '', 'слог', 'длинное предложение', 'буква']);
+let wordlength = getLengthWords(select);
+console.log(wordlength);
+
+// Задание 13 
+
+const number = [3, -3, 6, -2, 8, -4];
+let negationNumb = number.filter(item => item < 0);
+
+console.log(negationNumb);
