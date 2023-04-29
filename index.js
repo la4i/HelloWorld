@@ -58,8 +58,6 @@ function result(minValue, maxValue) {
 
 console.log(result(5, 7));
 
-
-
 // Задание 8 
 
 let currentDate = new Date();
