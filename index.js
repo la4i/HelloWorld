@@ -1,83 +1,93 @@
-/* Задание 1 */
+// Задание 1 
 
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+console.log('шоколад'.toUpperCase());
 
-/* Задание 2 */
+// Задание 2
 
-let issue = Number(2007);
-alert(`Год выпуска первого Iphone - ${issue}`);
+function searchStart(ko) {
+    return ko.filter(ko => /^ко/i.test(ko));
 
-/* Задание 3 */
+}
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог']));
 
-let name = String(`Брэндан Эйх`);
-alert(`Создатель языка JavaScript - ${name}`);
+// Задание 3
 
-/* Задание 4 */
+console.log(Math.floor(32.58884));
+console.log(Math.round(32.58884));
+console.log(Math.ceil(32.58884));
 
-let e = Number(10);
-let b = Number(2);
-alert(e + b);
-alert(e - b);
-alert(e * b);
-alert(e / b);
+// Задание 4
 
-/* Задание 5 */
+var arrayMin = Math.min.apply(null, [52, 53, 49, 77, 21, 32])
+var arrayMax = Math.max.apply(null, [52, 53, 49, 77, 21, 32])
 
-let result = (2 ** 5);
-alert(result);
+console.log(arrayMin);
+console.log(arrayMax);
 
-/* Задание 6 */
+// Задание 5 
 
-let r = Number(9);
-let t = Number(2);
-alert(r%t);
+function getRandomInt(minValue, maxValue) {
+    return Math.round(Math.random() * maxValue);
+}
 
-/* Задание 7 */
+console.log(getRandomInt(1, 10));
 
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num += 1;
-num -= 1;
-alert(num);
+// Задание 6 
 
+function getRandomArrNumbers(n) {
 
-/* Задание 8 */
+    let mass = [];
 
-let age1 = prompt(`Сколько Вам лет?`);
-alert(age1);
+    for (i = 0; i < (Math.floor(n / 2)); i++) {
+        mass.push(Math.round(Math.random() * 7));
+
+    }
+
+    return mass;
+
+}
+console.log(getRandomArrNumbers(7));
 
 
-/* Задание 9 */
+// Задание 7
 
-const user = {
-    name: `Vladislav`,
-    age: 27,
-    isAdmin: true,
-};
+function result(minValue, maxValue) {
 
-/* Задание 9.1 */
-user[`city of residence`] =`Varna`;
+    return Math.round(Math.random() * (maxValue - minValue) + minValue);
+}
 
-/* Задание 9.2 */
-user.age = 54;
-
-/* Задание 9.3 */
-delete user[`city of residence`];
-
-/* Задание 9.4 */
-let info = prompt(`Какую информацию хотите узнать о пользователе?`);
-alert (user [info]);
-
-/* Задание 10 */
-let named = prompt(`Как тебя зовут?`);
-alert (`Привет, ${named}!`);
+console.log(result(5, 7));
 
 
 
+// Задание 8 
 
+let currentDate = new Date();
+
+console.log(currentDate.toLocaleDateString('ru-RU')); // так красивее)
+
+// Задание 9
+
+var currentDate1 = new Date();
+
+currentDate1.setDate(currentDate1.getDate() + 73);
+
+console.log(currentDate1);
+
+// Задание 10 
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+
+let myDate = new Date();
+myDate.setDate(29);
+myDate.setMonth(3);
+myDate.setYear(2023);
+
+let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] +
+    " " + myDate.getFullYear() + ", " + days[myDate.getDay()] + " " + myDate.toLocaleTimeString('ru-RU');
+
+console.log(fullDate);
