@@ -1,128 +1,88 @@
-// Задание 1
+/* Задание 1 */
 
-const numbs = [1, 5, 4, 10, 0, 3];
+let a = 10;
+alert(a);
+a = 20;
+alert(a);
 
-for (let i = 0; i < numbs.length; i++) {
-    console.log(numbs[i]);
-    if (numbs[i] == 10) break;
-}
+/* Задание 2 */
 
+let issue = Number(2007);
+alert(`Год выпуска первого Iphone - ${issue}`);
 
-// Задание 2
+/* Задание 3 */
 
-let arr = [1, 5, 4, 10, 0, 3];
+let name = String(`Брэндан Эйх`);
+alert(`Создатель языка JavaScript - ${name}`);
 
-console.log(arr.indexOf(4));
+/* Задание 4 */
 
-// Задание 3
+let e = Number(10);
+let b = Number(2);
+alert(e + b);
+alert(e - b);
+alert(e * b);
+alert(e / b);
 
-let numb = [1, 3, 5, 10, 20];
+/* Задание 5 */
 
-numb = numb.join('');
+let result = (2 ** 5);
+alert(result);
 
-console.log(numb);
+/* Задание 6 */
 
-// Задание 4 
+let r = Number(9);
+let t = Number(2);
+alert(r % t);
 
-let arr1 = [];
+/* Задание 7 */
 
-for (let i = 0; i < 3; i++) {
-    let investArr = [];
-    for (let k = 0; k < 3; k++) {
-        investArr.push(1);
-    }
-    arr1.push(investArr);
-}
-console.log(arr1);
-
-// Задание 5 
-
-let numbs1 = [1, 1, 1];
-
-numbs1.push(2, 2, 2);
-
-console.log(numbs1);
-
-// Задание 6 
-
-let bull = [9, 8, 7, 'a', 6, 5];
-
-bull = bull.sort();
-console.log(bull.pop());
-
-console.log(bull);
-
-// Задание 7 
-
-const arr3 = [9, 8, 7, 6, 5];
-let userInp = +prompt('Введите число от 1 до 10');
-if (arr3.includes(userInp)) {
-    alert('Число содержиться в массиве')
-} if (isNaN(userInp)) {
-    alert('Не является числом')
-}  else {
-    alert('Не содержиться в массиве')
-}
-
-// Задание 8
-
-const str = 'abcdef';
-
-const reverse = str.split('').reverse().join('');
-
-console.log(reverse);
-
-// Задание 9 
-
-let arrt = [
-    [1, 2, 3],
-    [4, 5, 6],
-];
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num += 1;
+num -= 1;
+alert(num);
 
 arrt = arrt.flat();
 
-console.log(arrt);
+/* Задание 8 */
 
-// Задание 10
+let age1 = prompt(`Сколько Вам лет?`);
+alert(age1);
 
-const arr2 = [2, 5, 7, 10, 3];
 
-for (let elem of arr2) {
-    const result = arr2.reduce((intermediate, value) => intermediate + value); {
-        const sum = (a, b) => {
-            let result = a + b;
-        }
-        console.log(result);
-    }
-}
+/* Задание 9 */
 
-// Задание 11 
+const user = {
+    name: `Vladislav`,
+    age: 27,
+    isAdmin: true,
+};
 
-const numbers = [2, 4, 6];
+/* Задание 9.1 */
+user[`city of residence`] = `Varna`;
 
-function squareNumbers(numbers) {
-    return numbers.map(x => x ** 2);
-}
+/* Задание 9.2 */
+user.age = 54;
 
-console.log(squareNumbers(numbers));
+/* Задание 9.3 */
+delete user[`city of residence`];
 
-// Задание 12
+/* Задание 9.4 */
+let info = prompt(`Какую информацию хотите узнать о пользователе?`);
+alert(user[info]);
 
-function getLengthWords(select) {
-    const arr = [];
-    for (let i = 0; i < select.length; i++) {
-        const wordlength = select[i].length;
-        arr.push(wordlength)
-    } return arr;
-}
+/* Задание 10 */
+let named = prompt(`Как тебя зовут?`);
+alert(`Привет, ${named}!`);
 
 let select = (['слово', '', 'слог', 'длинное предложение', 'буква']);
 let wordlength = getLengthWords(select);
 console.log(wordlength);
 
-// Задание 13 
 
-const number = [3, -3, 6, -2, 8, -4];
-let negationNumb = number.filter(item => item < 0);
 
 console.log(negationNumb);
