@@ -33,7 +33,7 @@ alert(result);
 
 let r = Number(9);
 let t = Number(2);
-alert(r%t);
+alert(r % t);
 
 /* Задание 7 */
 
@@ -63,7 +63,7 @@ const user = {
 };
 
 /* Задание 9.1 */
-user[`city of residence`] =`Varna`;
+user[`city of residence`] = `Varna`;
 
 /* Задание 9.2 */
 user.age = 54;
@@ -73,11 +73,11 @@ delete user[`city of residence`];
 
 /* Задание 9.4 */
 let info = prompt(`Какую информацию хотите узнать о пользователе?`);
-alert (user [info]);
+alert(user[info]);
 
 /* Задание 10 */
 let named = prompt(`Как тебя зовут?`);
-alert (`Привет, ${named}!`);
+alert(`Привет, ${named}!`);
 
 let select = (['слово', '', 'слог', 'длинное предложение', 'буква']);
 let wordlength = getLengthWords(select);
