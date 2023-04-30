@@ -89,3 +89,4 @@ let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] +
     " " + myDate.getFullYear() + ", " + days[myDate.getDay()] + " " + myDate.toLocaleTimeString('ru-RU');
 
 console.log(fullDate);
+
