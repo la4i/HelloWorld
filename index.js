@@ -1,92 +1,88 @@
-// Задание 1 
+/* Задание 1 */
 
-console.log('шоколад'.toUpperCase());
+let a = 10;
+alert(a);
+a = 20;
+alert(a);
 
-// Задание 2
+/* Задание 2 */
 
-function searchStart(ko) {
-    return ko.filter(ko => /^ко/i.test(ko));
+let issue = Number(2007);
+alert(`Год выпуска первого Iphone - ${issue}`);
 
-}
-console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог']));
+/* Задание 3 */
 
-// Задание 3
+let name = String(`Брэндан Эйх`);
+alert(`Создатель языка JavaScript - ${name}`);
 
-console.log(Math.floor(32.58884));
-console.log(Math.round(32.58884));
-console.log(Math.ceil(32.58884));
+/* Задание 4 */
 
-// Задание 4
+let e = Number(10);
+let b = Number(2);
+alert(e + b);
+alert(e - b);
+alert(e * b);
+alert(e / b);
 
-var arrayMin = Math.min.apply(null, [52, 53, 49, 77, 21, 32])
-var arrayMax = Math.max.apply(null, [52, 53, 49, 77, 21, 32])
+/* Задание 5 */
 
-console.log(arrayMin);
-console.log(arrayMax);
+let result = (2 ** 5);
+alert(result);
 
-// Задание 5 
+/* Задание 6 */
 
-function getRandomInt(minValue, maxValue) {
-    return Math.round(Math.random() * maxValue);
-}
+let r = Number(9);
+let t = Number(2);
+alert(r%t);
 
-console.log(getRandomInt(1, 10));
+/* Задание 7 */
 
-// Задание 6 
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num += 1;
+num -= 1;
+alert(num);
 
-function getRandomArrNumbers(n) {
+arrt = arrt.flat();
 
-    let mass = [];
+/* Задание 8 */
 
-    for (i = 0; i < (Math.floor(n / 2)); i++) {
-        mass.push(Math.round(Math.random() * 7));
-
-    }
-
-    return mass;
-
-}
-console.log(getRandomArrNumbers(7));
-
-
-// Задание 7
-
-function result(minValue, maxValue) {
-
-    return Math.round(Math.random() * (maxValue - minValue) + minValue);
-}
-
-console.log(result(5, 7));
-
-// Задание 8 
-
-let currentDate = new Date();
-
-console.log(currentDate.toLocaleDateString('ru-RU')); // так красивее)
-
-// Задание 9
-
-var currentDate1 = new Date();
-
-currentDate1.setDate(currentDate1.getDate() + 73);
-
-console.log(currentDate1);
-
-// Задание 10 
-
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+let age1 = prompt(`Сколько Вам лет?`);
+alert(age1);
 
 
-let myDate = new Date();
-myDate.setDate(29);
-myDate.setMonth(3);
-myDate.setYear(2023);
+/* Задание 9 */
 
-let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] +
-    " " + myDate.getFullYear() + ", " + days[myDate.getDay()] + " " + myDate.toLocaleTimeString('ru-RU');
+const user = {
+    name: `Vladislav`,
+    age: 27,
+    isAdmin: true,
+};
 
-console.log(fullDate);
+/* Задание 9.1 */
+user[`city of residence`] =`Varna`;
 
+/* Задание 9.2 */
+user.age = 54;
+
+/* Задание 9.3 */
+delete user[`city of residence`];
+
+/* Задание 9.4 */
+let info = prompt(`Какую информацию хотите узнать о пользователе?`);
+alert (user [info]);
+
+/* Задание 10 */
+let named = prompt(`Как тебя зовут?`);
+alert (`Привет, ${named}!`);
+
+let select = (['слово', '', 'слог', 'длинное предложение', 'буква']);
+let wordlength = getLengthWords(select);
+console.log(wordlength);
+
+
+
+console.log(negationNumb);
