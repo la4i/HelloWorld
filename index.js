@@ -95,7 +95,7 @@ function filter(arr, callback) {
   return result;
 }
 
-console.log(filter([3, -4, 1, 9], isPositive)); 
+console.log(filter([3, -4, 1, 9], isPositive));
 
 const people = [
   { name: "Глеб", gender: "male" },
@@ -104,7 +104,7 @@ const people = [
   { name: "Оксана", gender: "female" },
 ];
 
-console.log(filter(people, isMale)); 
+console.log(filter(people, isMale));
 
 // Задание 3;
 
