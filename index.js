@@ -155,4 +155,5 @@ function sayHi(name) {
     console.log(`Привет, ${name}!`);
   }, 1001);
 }
+
 delayForSecond(sayHi("Глеб"));
